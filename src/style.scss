@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.after, .before {
+  margin-top: 100vh;
+} 
+
+.text {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.right {
+  text-align: right;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  padding-top: 75px;
+  background: #ccc;
+  text-align: center;
+  color: #FFF;
+  font-size: 3em;
+}

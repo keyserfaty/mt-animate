@@ -1,0 +1,85 @@
+/** 
+  Wrappers
+*/
+
+.wrapper-tb, .wrapper-tb2 {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+}
+
+.wrapper-tb {
+  justify-content: flex-start;
+}
+
+.wrapper-tb2 {
+	justify-content: flex-end;
+}
+
+.wrapper-bt {
+  position: relative;
+  background: white;
+  top: -50px;
+  height: 50px;
+}
+
+.wrapper-lrb {
+  background: yellow;
+  height: 50px;
+}
+
+/**
+  AOS Animations
+*/
+
+// Left -> Right Animation
+[data-aos="tr-lr"] {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0%;
+  opacity: 0;
+  transition-property: width, opacity;
+  
+  &.aos-animate {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+// Top -> Bottom Animation
+[data-aos="tr-tb"] {
+  overflow: hidden;
+  height: auto;
+  flex: 0;
+  transition-property: flex;
+  
+  &.aos-animate {
+    flex: 1;
+  }
+}
+
+// Top -> Bottom 2 Animation
+[data-aos="tr-tb2"] {
+  overflow: hidden;
+  height: auto;
+  flex: 0;
+  transition-property: flex;
+  
+  &.aos-animate {
+    flex: 1;
+  }
+}
+
+// Bottom -> Top Animation
+[data-aos="tr-bt"] {
+  overflow: hidden;
+  height: auto;
+  position: absolute;
+  top: 0;
+  z-index: -10;
+  transition-property: top;
+  
+  &.aos-animate {
+    top: 50px;
+  }
+}
